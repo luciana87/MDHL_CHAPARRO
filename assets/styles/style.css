@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*   ###   HEADER   ###  */
+
+header section h1 {
+    font-size: 5rem;
+    color: #5fa199;
+    text-shadow: 4px 1px 2px #ebd213;
+    padding: 20px;
+}
+
+header section .banner {
+    height: 500px;
+    background-image: url(../img/design1_image2.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px 2px #000;
+}
+
+header section article nav {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 108px;
+}
+
+header section article nav a{
+    list-style-type: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    background-color: #5fa199;
+    border: transparent;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 2px #363434b8;
+    font-weight: bold;
+}
+
+header section article nav a {
+    color: #ebd213;
+    padding: 10px;
+}
+
+header section article:nth-child(3) {
+    background-color: #c64832;
+    border: 2px solid #ebd213;
+    text-align: center;
+}
+
+header section article h2 {
+    font-size: 3rem;
+    color: #ebd213;
+    text-shadow: 2px 0px 1px #284541;
+}
+
+/*  ###  MAIN  ###  */
+
+main section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+main section article:first-child {
+    width: 20%;
+}
+
+main section article:first-child img {
+    width: 100%;
+}
+
+main section article:nth-child(2) {
+    width: 70%;
+}
+
+main section article:nth-child(2) ul {
+    list-style-type: none;
+}
+
+main section article:nth-child(2) ul h3, h2 {
+    font-size: 1.8rem;
+}
+
+main section article:nth-child(2) ul li, p {
+    margin-bottom: 15px;
+    font-size: 1.3rem;    
+}
+
+.to-do, p {
+    margin-left: 30px;
+}
