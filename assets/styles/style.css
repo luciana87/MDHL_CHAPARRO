@@ -5,31 +5,60 @@
     text-decoration: none;
 }
 
-/*   ###   HEADER   ###  */
-
-header section h1 {
-    font-size: 5rem;
-    color: #5fa199;
-    text-shadow: 4px 1px 2px #ebd213;
+header div section {
+    display: flex;
+    align-items: center;
     padding: 20px;
 }
 
-header section .banner {
+/* LOGO  */
+header div section div:first-child {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div section div:first-child img {
+    width: 100%;
+}
+
+/* TITULO */
+
+header div section div:nth-child(2) {
+    width: 80%;
+}
+
+header div section div:nth-child(2) h1{
+    font-size: 5rem;
+    color: #5fa199;
+    text-shadow: 4px 1px 2px #ebd213;
+    padding: 20px 25px 50px;
+}
+
+/* BANNER */
+
+header div .banner {
     height: 500px;
-    background-image: url(../img/design1_image2.jpg);
+    background-image: url(../img/banner.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 10px 2px #000;
 }
 
-header section article nav {
+header div .banner nav {
     display: flex;
     position: absolute;
     right: 0;
-    top: 108px;
+    top: 190px;
+    margin-right: 10px;
 }
 
-header section article nav a{
+header div .banner a[href="#"]{
+    background-color: #c64832;
+}
+
+header div .banner nav a {
     list-style-type: none;
     margin: 0 10px;
     font-size: 1.5rem;
@@ -38,59 +67,193 @@ header section article nav a{
     border-radius: 5px;
     box-shadow: 0px 0px 10px 2px #363434b8;
     font-weight: bold;
-}
-
-header section article nav a {
     color: #ebd213;
     padding: 10px;
 }
 
-header section article:nth-child(3) {
+/* UPCONMING EVENTS */
+
+header div article {
+    display: flex;
+    height: 70px;
     background-color: #c64832;
     border: 2px solid #ebd213;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
-header section article h2 {
+header div article h2 {
     font-size: 3rem;
     color: #ebd213;
     text-shadow: 2px 0px 1px #284541;
 }
 
-/*  ###  MAIN  ###  */
+/* MAIN */
 
-main section {
+main div:first-child {
+    margin: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
 }
 
-main section article:first-child {
-    width: 20%;
+main div div:first-child {
+    width: 40%;
 }
 
-main section article:first-child img {
+main div div:first-child img {
     width: 100%;
+    box-shadow: 0 0 10px 2px #000;
 }
 
-main section article:nth-child(2) {
-    width: 70%;
+main div div:nth-child(2) {
+    width: 80%;
 }
 
-main section article:nth-child(2) ul {
+main div div:nth-child(2) ul {
     list-style-type: none;
 }
 
-main section article:nth-child(2) ul h3, h2 {
-    font-size: 1.8rem;
-}
-
-main section article:nth-child(2) ul li, p {
+main div div:nth-child(2) ul li, dd, p {
     margin-bottom: 15px;
-    font-size: 1.3rem;    
+    font-size: 1.2rem;
 }
 
-.to-do, p {
-    margin-left: 30px;
+main div div:nth-child(2) ul li h3, dt, .main-div-schedule section h3 {
+    font-size: 2rem;
+}
+
+.btn-container {
+    margin-top: 50px;
+}
+
+.btn-schedule {
+    color: #284541;
+    background-color: #5fa199;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-schedule:hover {
+    box-shadow: 0 0 10px 2px #284541;
+}
+
+/* SCHEDULE */
+
+.main-div-schedule {
+    flex-direction: column;
+}
+
+.main-div-schedule section  {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-div-schedule section table caption, .main-div-schedule section table thead tr th, .main-div-schedule section table tbody tr td, .schedule-info p span, .schedule-contact p span {
+    font-size: 1.5rem;
+}
+
+.main-div-schedule section table thead tr th, .main-div-schedule section table caption {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.schedule-additional, .schedule-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schedule-additional .schedule-info p {
+    width: 100%;
+}
+
+main .schedule-additional .schedule-info, main .schedule-additional .schedule-contact-info {
+    width: 100%;
+}
+
+main .schedule-additional .schedule-contact-info .schedule-contact {
+    display: flex;
+}
+
+main .schedule-additional .schedule-contact-info .schedule-contact p {
+    margin-right: 20px;
+}
+
+.schedule-info p span, .schedule-contact-info p span {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+
+
+/* MAIN RULES */
+
+.main-rules {
+    padding: 50px;
+}
+
+.main-rules .main-section-rules h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    width: 35%;
+    margin-bottom: 10px;
+}
+
+.main-rules .main-section-rules h3 span {
+    text-transform: uppercase;
+}
+
+.main-rules .main-section-rules p {
+    font-size: 1.5rem;
+}
+
+main .main-section-rules, main .main-div-rules, main .main-div-rules-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-div-rules dt {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+main .main-div-rules dd {
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.rules-order-list {
+    list-style-type:lower-latin ;
+}
+
+.main-div-rules-img img {
+    box-shadow: 0 0 10px 2px #000;
+}
+
+/*  FOOTER */
+
+footer {
+    background-color: #c64832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+footer div:first-child a {
+   font-size: 2.5rem;
+   color: #ebd213;
+   padding: 10px;
+   cursor: pointer;
+}
+
+footer div:nth-child(2) {
+    color: #FFF;
 }
