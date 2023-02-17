@@ -88,6 +88,14 @@ header div article h2 {
     text-shadow: 2px 0px 1px #284541;
 }
 
+/* REGISTRATION FORM */
+
+header div article .registration-form {
+    font-size: 2.5rem;
+    color: #ebd213;
+    text-shadow: 2px 0px 1px #284541;
+}
+
 /* MAIN */
 
 main div:first-child {
@@ -126,13 +134,14 @@ main div div:nth-child(2) ul li h3, dt, .main-div-schedule section h3 {
     margin-top: 50px;
 }
 
-.btn-schedule {
-    color: #284541;
+.btn-schedule, .main-div-schedule .location-school-info {
+    color: #f9f32f;
     background-color: #5fa199;
     padding: 20px;
     border-radius: 15px;
     font-size: 1.5rem;
     font-weight: bold;
+    text-shadow: 1.3px 3px 2px #00000077;
 }
 
 .btn-schedule:hover {
@@ -146,13 +155,53 @@ main div div:nth-child(2) ul li h3, dt, .main-div-schedule section h3 {
 }
 
 .main-div-schedule section  {
-    width: 60%;
+    width: 85%;
     display: flex;
     flex-direction: column;
+    border-radius: 4%;
+}
+
+.section-h3-table{
+    color: #5fa199;
+    text-shadow: 2.3px 1px 2px #ebd213;
+}
+
+.main-div-schedule section table {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
 }
 
 .main-div-schedule section table caption, .main-div-schedule section table thead tr th, .main-div-schedule section table tbody tr td, .schedule-info p span, .schedule-contact p span {
     font-size: 1.5rem;
+}
+
+.main-div-schedule section table thead tr th, .main-div-schedule section table tbody tr td {
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.4em;
+}
+
+.main-div-schedule section table thead tr{
+    color: #f9f32f;
+    text-shadow: 1.3px 3px 2px #00000077;
+}
+
+.main-div-schedule section table thead tr th {
+    font-size: 1.8rem;
+    background:#5fa199;
+}
+
+.main-div-schedule section table tbody tr:nth-child(even) {
+    background: beige;
+}
+
+.main-div-schedule section table tbody tr .tbody-td {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .main-div-schedule section table thead tr th, .main-div-schedule section table caption {
@@ -164,6 +213,8 @@ main div div:nth-child(2) ul li h3, dt, .main-div-schedule section h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    width: 80%;
 }
 
 .schedule-additional .schedule-info p {
@@ -187,7 +238,9 @@ main .schedule-additional .schedule-contact-info .schedule-contact p {
     margin-right: 10px;
 }
 
-
+.main-div-schedule .location-school-info {
+    margin: 30px 0;
+}
 
 /* MAIN RULES */
 
@@ -196,7 +249,7 @@ main .schedule-additional .schedule-contact-info .schedule-contact p {
 }
 
 .main-rules .main-section-rules h3 {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     text-align: center;
     width: 35%;
     margin-bottom: 10px;
@@ -234,6 +287,146 @@ main .main-div-rules dd {
 
 .main-div-rules-img img {
     box-shadow: 0 0 10px 2px #000;
+}
+
+/* MAIN FORM */
+
+.schedule-form-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-container {
+    flex-direction: column;
+}
+
+main #div-form-container {
+    width: 50%;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    border-color: #5fa199;
+}
+
+form .fieldset-no-border {
+    border: none;
+    display: flex;
+}
+
+form fieldset legend {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 10px 0;
+    color: #5fa199;
+}
+
+form fieldset div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset, form div {
+    padding: 0 10px;
+}
+
+form .fieldset-no-border .gender-school-info {
+    width: auto;
+}
+
+form fieldset .gender-school-info label {
+    margin-right: 10px;
+}
+
+form .form-user-info p {
+    font-weight: bold;
+}
+
+form .form-user-info div input {
+    margin-left: 10px;
+}
+
+form fieldset .gender-school-info, .birthday-info {
+    flex-direction: row;
+}
+
+form fieldset .birthday-info {
+    display: flex;
+    align-items: center;
+}
+
+form fieldset .birthday-info input, .permission-play-container .permission-play .permission-play-signature .date-signature label input {
+    border: none;
+}
+
+form label {
+    font-size: 1.2rem;
+}
+
+form input {
+    border:1px solid #5fa199;
+    padding: 15px;
+    opacity: 50%;
+}
+
+.btn-form {
+    padding: 0;
+}
+
+.btn-form input, .btn-enviar {
+    border:3px solid #284541;
+    font-size: 1.5rem;
+    color: #284541;
+    border-radius: 5px;
+    opacity: 100%;
+    padding: 10px 20px;
+}
+
+.permission-play-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+}
+
+.permission-play-container .permission-play {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.permission-play-container .permission-play-signature form div {
+    width: 100%;
+    margin: 50px 0;
+}
+
+/* MAIN LOCATIONS */
+
+.schedule-container .main-div-schedule .main-div-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(250, 250, 210, 0.665);
+    border-radius: 100px;
+}
+.schedule-container .main-div-schedule .main-div-section article {
+    margin: 50px;
+}
+
+.schedule-container .main-div-schedule .main-div-section article iframe {
+    border: 1px solid #28454184;
+    box-shadow: 0 0 10px 2px #000;
+}
+
+.schedule-container .main-div-schedule .main-div-section article h4 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #284541;
 }
 
 /*  FOOTER */
